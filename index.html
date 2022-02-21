@@ -1,0 +1,96 @@
+ <!doctype html>
+ <head>
+<meta charset="utf8">
+ </head>
+ <style>
+div.space{height:20px}
+div.header{text-align:center;background-color:powderblue;height:500px}
+button.a{height:300px;background-color:green;color:white;height:80;width:100%}
+button.b{height:300px;background-color:lightgreen;width:100%}
+body.bd1{background-color:grey;}
+h1{font-size:200}
+h2{font-size:200}
+</style>
+ <body class="bd1" id="bd1">
+
+<div class="header">
+<h1>草田日語學員專區</h1>
+
+
+<button id="btn1" class="a" onclick="getData(`div1`)">
+<h1>學員資料下載區</h1>
+</button>
+<div id="div1">
+<button class="b">div1</button><br/>
+<button class="b">上課講義</button><br/>
+<button class="b">延伸試題</button><br/>
+<button class="b">課本照片</button><br/>
+</div>
+<div class="space"></div>
+
+<button id="btn2" class="a" onclick="getData(`div2`)">
+  <h1>我要請假</h1>
+</button>
+<div id="div2">
+<button class="b">div2</button><br/>
+<button class="b"><h2>我會晚點到</button><br/>
+<button class="b">我想改期</button><br/>
+<button class="b">我想請假</h2></button><br/>
+</div>
+<div class="space"></div>
+<button id="btn3" class="a" onclick="getData(`div3`)">
+<h1>加購課程</h1>
+</button>
+<div id="div3">
+<button class="b">div3</button><br/>
+<button class="b">個教班續報</button><br/>
+<button class="b">團體班續報</button><br/>
+<button class="b">加購課程</button><br/>
+</div>
+<div class="space"></div>
+<button id="btn4" class="a" onclick="getData(`div4`)">
+<h1>推薦好友</h1>
+</button>`
+<div id="div4">
+<button class="b">專屬連結</button><br/>
+<button class="b">代繳費用</button><br/>
+<button class="b">獎金計算</button><br/>
+<button class="b">獎勵兌換</button><br/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="demo" value="1">
+ </body>
+  <script>
+function none(){
+document.getElementById("div1").style.display="none"
+document.getElementById("div2").style.display="none"
+document.getElementById("div3").style.display="none"
+document.getElementById("div4").style.display="none"
+}
+none()
+function getData(id){
+var btn=document.getElementById(id);
+if(btn.style.display=="none"){
+none();
+btn.style.display="block"}else{none()}
+
+
+
+}
+</script>
+ 
+ 
+ </html>
